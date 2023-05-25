@@ -1,0 +1,97 @@
+/*$in@*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+.height-100vh {height: 100vh}
+.flex {display: flex}
+.flex-column{flex-direction: column}
+.justify-center {justify-content: center}
+.align-center {align-items: center}
+.radius-1rem {border-radius: 1rem}
+.radius-50{border-radius: 50%}
+.pointer {cursor: pointer}
+:root{
+    --btn-color: #dcdcdc;
+    --btn-hover: #afafaf;
+}
+body{
+    background: #eee;
+}
+.container{
+    position: relative;
+    width: 45rem;
+    height: 30rem;
+    overflow: hidden;
+    border: 5px solid #aaa;
+}
+.item{
+    width: 100%;
+    height: 100%;
+}
+.item img{
+    width: 100%;
+    height: 100%;
+}
+.box-btn{
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+}
+.box-btn .btn{
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--btn-color);
+    border: 2px solid #797979;
+    margin: 0 0.8rem;
+    box-shadow: 4px 4px 5px #555;
+}
+.box-btn .btn:hover{
+    background: var(--btn-hover);
+}
+.active-btn{
+    background: #7c7c7c !important;
+    border-color: #bdbdbd !important;
+}
+.arrow-left{
+   position: absolute;
+    top: 0;
+    height: 100%;
+    width: 5rem;
+}
+.arrow-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 5rem;
+}
+i{
+    color: var(--btn-color);
+    border: 3px solid #797979;
+   box-shadow: 0 0 10px #444;
+}
+p.title{
+    margin-top: 1rem;
+    font-size: 36px;
+    text-shadow: 5px 5px 4px #777777;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 90%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 500px){
+    .container{
+        width: 98%;
+    }
+    p.title{
+        font-size: 28px;
+    }
+}
