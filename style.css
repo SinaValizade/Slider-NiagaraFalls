@@ -73,7 +73,7 @@ body{
 i{
     color: var(--btn-color);
     border: 3px solid #797979;
-   box-shadow: 0 0 10px #444;
+    box-shadow: 0 0 10px #444;
 }
 p.title{
     margin-top: 1rem;
@@ -90,6 +90,17 @@ p.title{
 @media screen and (max-width: 500px){
     .container{
         width: 98%;
+    }
+    .box-btn{
+        height: 2.5rem;
+    }
+    .box-btn .btn{
+        margin: 0 0.4rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    .arrow-left, .arrow-right{
+        width: 3.2rem;
     }
     p.title{
         font-size: 28px;

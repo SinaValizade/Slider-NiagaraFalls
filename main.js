@@ -5,6 +5,12 @@ const leftBtn = document.querySelector('div.arrow-left i');
 const btns = document.querySelectorAll('div.btn');
 const slide= document.querySelector('div.item img');
 const img = ['./files/falls1.jpg','./files/falls2.jpg','./files/falls3.jpg','./files/falls4.jpg','./files/falls5.jpg' ];
+const mediaQuery = window.matchMedia('(max-width: 500px)')
+
+if (mediaQuery.matches){
+    rightBtn.classList.replace('fa-3x', 'fa-2x');
+    leftBtn.classList.replace('fa-3x', 'fa-2x');
+}
 
 btns[0].addEventListener('click', btn0);
 btns[1].addEventListener('click', btn1);
